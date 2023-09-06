@@ -1,0 +1,163 @@
+body {
+    font-family: Microsoft JhengHei;
+}
+#banner {
+    background-image: url(../img/img_1.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    margin-top: 3.5rem;
+}
+.title {
+    color: #FA8072;
+    font-weight: bold;
+}
+/*價目表*/
+h4.price{
+	clear:both;
+	text-align:center;
+	margin:60px 0 30px 0;}
+
+h4.price em{
+	display:block;
+	font-family: 'Droid Serif', serif;
+	font-size:32px;
+	font-weight:normal;
+	color:#4D3900;
+	text-transform:uppercase;}
+
+h4.price strong{
+	margin-top:5px;
+	display:block;
+	font-size:16px;
+	font-weight:normal;
+	color:#4D3900;}
+h4.price strong:before,
+h4.price strong:after{
+	content:"/";
+	margin:0 8px;}
+
+.drinkMenu{
+	margin:0 -30px;}
+
+.drinkMenu > div{
+	padding:15px 30px;
+	border-left:1px dashed #4D3900;}
+
+.drinkMenu > div:first-child{
+	border:none;}
+
+.drinkMenu h5{
+	font-size:21px;
+	font-weight:normal;
+	color:#4D3900;
+	margin:10px 0;
+	position: relative;
+}
+.drinkMenu h5 b{
+	font-size:16px;}
+
+.drinkMenu h5.showoz::before{
+	content:attr(data-oz);
+	color:#fff;
+	background: #4D3900;
+	font-size: 12px;
+	list-style: 0.5px;
+	padding: 5px 12px;
+	position: absolute;
+	bottom:0;
+	right:0;
+}
+
+.drinkMenu h5 + div{
+	font-size: 12px;
+	line-height: 1.6;
+	letter-spacing: 1px;
+	margin: 10px 0;
+	padding: 5px 0;
+	border-top: 1px dashed #4D3900;
+	border-bottom: 1px dashed  #4D3900;
+}
+.drinkMenu table{
+	width:100%;
+	font-size:20px;
+	color:#222;
+	line-height:1.6;
+    margin-bottom: 20px;
+}
+
+.drinkMenu table th,
+.drinkMenu table td{
+	font-weight:normal;
+	padding:5px 0;
+	text-align:left;}
+
+.drinkMenu table th{
+	position: relative;
+}
+
+
+.drinkMenu table td{
+	text-align:right;
+	position: relative
+}
+.drinkMenu table td.ch{
+	padding-right: 10px;
+	font-size: 20px;
+}
+
+.drinkMenu table.notice{
+	font-size: 15px;
+	line-height: 1.8;
+	padding: 10px;
+	text-align: left;
+	border-top: 1px dashed #6ba723;
+	border-bottom: 1px dashed #6ba723;
+}
+
+.drinkMenu table.notice td{
+	text-align: left;
+}
+
+.drinkMenu_new h5{
+	float:left;
+	font-size:21px;
+	font-weight:normal;
+	color:#6ba723;
+	margin:10px 0;}
+
+.drinkMenu_new ul.step{
+	float:right;}
+
+.drinkMenu_new ul.step li{
+	padding:2px 0;
+	font-size: 15px;
+}
+
+
+@media (max-width: 768px){
+	
+	.drinkMenu > div{
+		float:none;
+		max-width:480px;
+		margin:0 auto;
+		border:none;
+		height:auto !important;}
+}
+
+
+#gotop {
+    position:fixed;
+    z-index:1000;
+    right:20px;
+    bottom:30px;
+    width:50px;
+    height:50px;
+    color:#fff;
+    background: #FA8072;
+    line-height:50px;
+    border-radius:50%;
+    transition:all 0.5s;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
