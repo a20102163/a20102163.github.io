@@ -672,12 +672,6 @@ a {
   transform: rotate(45deg);
 }
 
-.newsletter__container,
-.newsletter__form,
-.newsletter__input {
-  transition: background 0.4s; /* for dark mode animation */
-}
-
 /*=============== FOOTER ===============*/
 .footer {
   background-color: var(--black-color);
